@@ -21,7 +21,7 @@ export default function Joke() {
         {joke}
       </div>
       <button class="btn" id="jokeBtn" onClick={getJoke}>
-        Get Another Joke
+        {joke === "" ? "Get Joke" : "Get Another joke"}
       </button>
     </div>
   );
